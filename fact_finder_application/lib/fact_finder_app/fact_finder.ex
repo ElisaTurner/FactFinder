@@ -4,7 +4,7 @@ defmodule FactFinder do
   """
 
   @facts_file "facts.txt"
-
+  # Function to input a new fact
   def input_fact(statement) do
     downcased_statement = String.downcase(String.trim(statement))
     updated_facts = read_facts() ++ [downcased_statement]
@@ -13,6 +13,7 @@ defmodule FactFinder do
     updated_facts
   end
 
+  # Function to query for a fact
   def query_facts(statement) do
     downcased_statement = String.downcase(String.trim(statement))
     stored_facts = read_facts()
@@ -32,6 +33,7 @@ defmodule FactFinder do
     :ok
   end
 
+  # Internal function to read facts from the file
   defp read_facts() do
     case File.read(@facts_file) do
       {:ok, content} ->
@@ -42,6 +44,7 @@ defmodule FactFinder do
     end
   end
 
+  # Internal function to write facts to the file
   defp write_facts(facts) do
     File.write!(@facts_file, Enum.join(facts, "\n"))
   end

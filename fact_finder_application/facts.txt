@@ -1,3 +1,4 @@
-
+is_a_cat (yyyy)
 is_a_cat (lucy)
-is_a_cat (lucy)
+is_a_cat (yyyeey)
+is_a_cat (james)
