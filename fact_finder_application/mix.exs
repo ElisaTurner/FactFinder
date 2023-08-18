@@ -1,4 +1,4 @@
-defmodule FactFinder.MixProject do
+defmodule FactFinderApp.MixProject do
   use Mix.Project
 
   def project do

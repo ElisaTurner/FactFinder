@@ -1,0 +1,3 @@
+
+is_a_cat (lucy)
+is_a_cat (lucy)
