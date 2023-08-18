@@ -4,6 +4,7 @@ defmodule FactFinder do
   """
 
   @facts_file "facts.txt"
+
   # Function to input a new fact
   def input_fact(statement) do
     downcased_statement = String.downcase(String.trim(statement))
